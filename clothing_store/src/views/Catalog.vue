@@ -168,13 +168,18 @@ export default {
     // productItem,
   },
   computed: {
-    ...mapGetters(['goodData', 'isLoaded']),
+    ...mapGetters(['goodData', 'isLoaded', 'PRODUCTS']),
   },
   methods: {
-    ...mapActions(['fetchGoodData']),
+    ...mapActions(['fetchGoodData', 'GET_PRODUCTS_FROM_API']),
   },
   created() {
     this.fetchGoodData();
+    this.GET_PRODUCTS_FROM_API();
+    console.log(this.PRODUCTS);
+  },
+  mounted() {
+
   },
 };
 </script>
