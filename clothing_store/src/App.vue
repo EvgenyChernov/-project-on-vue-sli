@@ -2,10 +2,10 @@
   <div id="app">
     <header class="header center">
       <div class="header__left">
-        <a href="index.html" class="logo">
-          <a href="#" class="logo__img"></a>
-          <span class="logo__text">BRAN<span class="pink">D</span></span>
-        </a>
+        <router-link to="/" class="logo">
+            <a href="#" class="logo__img"></a>
+            <span class="logo__text">BRAN<span class="pink">D</span></span>
+        </router-link>
         <div class="browse__box">
           <a href="#" class="browse__button"><span class="browse__button_text">Browse</span>
             <div
@@ -39,10 +39,7 @@
             </div>
           </div>
         </div>
-        <form action="#" class="header__left__search_box">
-          <input class="header__left__input" type="text" placeholder="Search for Item...">
-          <a href="#" class="header__left__button__search"></a>
-        </form>
+        <filterEl></filterEl>
       </div>
       <div class="header__right">
         <div class="account__box">
@@ -567,6 +564,17 @@
     </footer>
   </div>
 </template>
+
+<script>
+import filterEl from '@/components/FilterComp.vue';
+
+export default {
+  name: 'app',
+  components: {
+    filterEl,
+  },
+};
+</script>
 
 <style lang="sass">
 ////////////////// локальные переменные //////////////////

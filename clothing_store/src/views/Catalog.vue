@@ -178,8 +178,5 @@ export default {
     this.GET_PRODUCTS_FROM_API();
     console.log(this.PRODUCTS);
   },
-  mounted() {
-
-  },
 };
 </script>

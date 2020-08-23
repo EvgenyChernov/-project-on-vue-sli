@@ -5,8 +5,6 @@ W
 'clothing_store/src/assets/preloader.svg,5\9\59d683a5a45729282de74fb4b8c1f88d02529447
 Q
 !clothing_store/src/views/Home.vue,b\2\b2b66a794332ba0b82c36082e3f5c5a884d66759
-U
-%clothing_store/src/views/Products.vue,3\a\3a6f2589ebc66cd6a67283d0954eeccf9347aa19
 J
 clothing_store/src/App.vue,c\5\c54537a915ad4431d490a9a4a6b3528ea573b9fe
 P
@@ -27,3 +25,7 @@ S
 #clothing_store/src/store/product.js,e\2\e2e6bb46257fbc0e1c778073102cd09059d1ca98
 T
 $clothing_store/src/views/Catalog.vue,e\a\eaaee10f32e5d893e7ae521d7ed6feb54c4ad897
+J
+clothing_store/src/main.js,d\1\d16d2c134f112455af5716a3f54c343d0a3b7529
+\
+,clothing_store/src/components/FilterComp.vue,1\a\1a4769284ca6a2042b8c45c776e5efbc76cfcaf2

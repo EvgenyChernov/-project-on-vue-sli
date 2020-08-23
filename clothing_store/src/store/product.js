@@ -22,7 +22,7 @@ export default {
       setTimeout(() => {
         commit('SET_GOOD_DATA', { title: 'Мышь', price: 3000 });
         commit('SET_LOADED_STATUS', true);
-      }, 4000);
+      }, 1000);
     },
   },
 };

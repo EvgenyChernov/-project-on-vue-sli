@@ -27,16 +27,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="189750f2-9308-41b6-9ec7-43168e05a314" name="Default Changelist" comment="коммит 3 &quot;остов каталога готов&quot;">
-      <change afterPath="$PROJECT_DIR$/clothing_store/src/db/products.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clothing_store/src/db/stats.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clothing_store/src/db/userCart.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clothing_store/src/store/dbproducts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clothing_store/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/clothing_store/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clothing_store/src/components/FilterComp.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/server/db/products_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing_store/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clothing_store/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing_store/src/components/HelloWorld.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/clothing_store/src/components/ProductItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clothing_store/src/components/ProductItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clothing_store/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clothing_store/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing_store/src/components/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clothing_store/src/components/Products.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing_store/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clothing_store/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing_store/src/store/dbproducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/clothing_store/src/store/dbproducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing_store/src/store/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/clothing_store/src/store/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing_store/src/views/About.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/clothing_store/src/views/Catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clothing_store/src/views/Catalog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clothing_store/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/clothing_store/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing_store/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clothing_store/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing_store/src/views/Products.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/server/db/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server/db/products.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +52,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -98,6 +104,7 @@
       <workItem from="1598083895710" duration="553000" />
       <workItem from="1598084484278" duration="189000" />
       <workItem from="1598095696023" duration="4852000" />
+      <workItem from="1598135296525" duration="21166000" />
     </task>
     <task id="LOCAL-00001" summary="First commit in project.">
       <created>1597918311827</created>

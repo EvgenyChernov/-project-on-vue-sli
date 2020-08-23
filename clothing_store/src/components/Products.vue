@@ -1,19 +1,43 @@
 <template>
-  <div class="about">
-    <h1>This is Products page</h1>
-    <ProductItem></ProductItem>
+  <div>
+    <ProductItem
+      v-for="item of this.FILTERED"
+      :key="item.id_product" :img="item.img"
+      :product="item">
+    </ProductItem>
   </div>
 </template>
 
 <script>
 import ProductItem from '@/components/ProductItem.vue';
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   name: 'Products',
+  data() {
+    return {
+      products: [],
+      imgCatalog: 'https://placehold.it/200x150',
+    };
+  },
   components: {
     ProductItem,
   },
+  computed: {
+    ...mapGetters(['FILTERED']),
+  },
+  methods: {
+    ...mapActions(['GET_PRODUCTS_FROM_API']),
+    addProduct() {
+      this.PRODUCTS.forEach((el) => {
+        this.products.push(el);
+      });
+    },
+  },
+  created() {
+    this.GET_PRODUCTS_FROM_API();
+    console.log(this.FILTERED);
+  },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+};
