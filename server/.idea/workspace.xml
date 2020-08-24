@@ -20,20 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65c69e19-7ef4-4f1e-b660-3c6a94320cd3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../clothing_store/src/components/FilterComp.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/db/products_index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clothing_store/src/components/Cart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clothing_store/src/components/CartItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clothing_store/src/components/ProductsForHome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clothing_store/src/store/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../clothing_store/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../clothing_store/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clothing_store/src/components/HelloWorld.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../clothing_store/src/components/ProductItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../clothing_store/src/components/ProductItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../clothing_store/src/components/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../clothing_store/src/components/Products.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clothing_store/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../clothing_store/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clothing_store/src/store/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/../clothing_store/src/store/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clothing_store/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../clothing_store/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../clothing_store/src/views/Catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../clothing_store/src/views/Catalog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clothing_store/src/views/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clothing_store/src/views/Products.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clothing_store/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../clothing_store/src/views/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/db/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/products.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +76,7 @@
       <workItem from="1598097563631" duration="18000" />
       <workItem from="1598098829279" duration="941000" />
       <workItem from="1598137065584" duration="5674000" />
+      <workItem from="1598257677591" duration="730000" />
     </task>
     <servers />
   </component>

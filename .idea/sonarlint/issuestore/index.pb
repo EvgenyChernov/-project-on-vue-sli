@@ -29,3 +29,16 @@ J
 clothing_store/src/main.js,d\1\d16d2c134f112455af5716a3f54c343d0a3b7529
 \
 ,clothing_store/src/components/FilterComp.vue,1\a\1a4769284ca6a2042b8c45c776e5efbc76cfcaf2
+L
+node_modules/.yarn-integrity,1\d\1df8dbf80544761b3bd13bf1d030f7b6c5aad97e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+R
+"server/src/server/db/products.json,3\b\3b84e87fd0006e7b53c0a57384096d1e903e5903
+X
+(server/src/server/db/products_index.json,8\6\8603315087a207e4b3197aaaf71c17e1f2245344
+9
+	yarn.lock,5\3\53585a096fe3a3b96321113856ae62602995a33b
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

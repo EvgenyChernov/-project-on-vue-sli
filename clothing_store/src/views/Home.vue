@@ -39,92 +39,11 @@
     <section class="fetured center">
       <h3 class="fetured__h3">Fetured Items</h3>
       <p class="fetured__p">Shop for items based on what we featured in this week</p>
-
-      <div class="catalog">
-        <div class="product">
-          <a href="description.html" class="product__img">
-            <img src="img/product/shirt-1.jpg" alt="product"></a>
-          <a href="#" class="product__name">Mango People T-shirt</a>
-          <p class="product__price">$52.00</p>
-          <a href="#" class="product__add">
-            <img class="product__add__cart-img"
-                 src="img/paraphernalia/cart-white.png" alt="cart-white"> Add to
-            Cart</a>
-        </div>
-        <div class="product">
-          <a href="description.html" class="product__img">
-            <img src="img/product/blouse-1.jpg" alt="product"></a>
-          <a href="#" class="product__name">Mango People T-shirt</a>
-          <p class="product__price">$52.00</p>
-          <a href="#" class="product__add">
-            <img class="product__add__cart-img"
-                 src="img/paraphernalia/cart-white.png" alt="cart-white"> Add to
-            Cart</a>
-        </div>
-        <div class="product">
-          <a href="description.html" class="product__img">
-            <img src="img/product/jacket-1.jpg" alt="product"></a>
-          <a href="#" class="product__name">Mango People T-shirt</a>
-          <p class="product__price">$52.00</p>
-          <a href="#" class="product__add">
-            <img class="product__add__cart-img"
-                 src="img/paraphernalia/cart-white.png" alt="cart-white"> Add to
-            Cart</a>
-        </div>
-        <div class="product">
-          <a href="description.html" class="product__img">
-            <img src="img/product/dress-1.jpg" alt="product"></a>
-          <a href="#" class="product__name">Mango People T-shirt</a>
-          <p class="product__price">$52.00</p>
-          <a href="#" class="product__add">
-            <img class="product__add__cart-img"
-                 src="img/paraphernalia/cart-white.png" alt="cart-white"> Add to
-            Cart</a>
-        </div>
-        <div class="product">
-          <a href="description.html" class="product__img">
-            <img src="img/product/dress-2.jpg" alt="product"></a>
-          <a href="#" class="product__name">Mango People T-shirt</a>
-          <p class="product__price">$52.00</p>
-          <a href="#" class="product__add">
-            <img class="product__add__cart-img"
-                 src="img/paraphernalia/cart-white.png" alt="cart-white"> Add to
-            Cart</a>
-        </div>
-        <div class="product">
-          <a href="description.html" class="product__img">
-            <img src="img/product/pants-1.jpg" alt="product"></a>
-          <a href="#" class="product__name">Mango People T-shirt</a>
-          <p class="product__price">$52.00</p>
-          <a href="#" class="product__add">
-            <img class="product__add__cart-img"
-                 src="img/paraphernalia/cart-white.png" alt="cart-white"> Add to
-            Cart</a>
-        </div>
-        <div class="product">
-          <a href="description.html" class="product__img">
-            <img src="img/product/pullover-1.jpg" alt="product"></a>
-          <a href="#" class="product__name">Mango People T-shirt</a>
-          <p class="product__price">$52.00</p>
-          <a href="#" class="product__add">
-            <img class="product__add__cart-img"
-                 src="img/paraphernalia/cart-white.png" alt="cart-white"> Add to
-            Cart</a>
-        </div>
-        <div class="product">
-          <a href="description.html" class="product__img">
-            <img src="img/product/shirt-1.jpg" alt="product"></a>
-          <a href="#" class="product__name">Mango People T-shirt</a>
-          <p class="product__price">$52.00</p>
-          <a href="#" class="product__add">
-            <img class="product__add__cart-img"
-                 src="img/paraphernalia/cart-white.png" alt="cart-white"> Add to
-            Cart</a>
-        </div>
-      </div>
+      <Preloader v-if="!isLoaded"></Preloader>
+      <productsForHome v-else class="catalog"></productsForHome>
       <a href="catalog.html" class="button__all-product">Browse All Product
         <img class="button__all-product__img"
-             src="img/paraphernalia/arrow.png" alt="arrow"></a>
+             src="../assets/img/paraphernalia/arrow.png" alt="arrow"></a>
     </section>
     <section class="sentence">
       <div class="sentence__offer__block">
@@ -134,7 +53,8 @@
         </a>
         <div class="offer__list">
           <a href="#" class="offer__link">
-            <img class="offer__link__img" src="img/paraphernalia/truck-img.png" alt="truck">
+            <img class="offer__link__img"
+                 src="../assets/img/paraphernalia/truck-img.png" alt="truck">
             <div class="offer__link__content">
               <h5 class="offer__link__content__h5">Free Delivery</h5>
               <p class="offer__link__content__p">Worldwide delivery on all.
@@ -144,7 +64,7 @@
             </div>
           </a>
           <a href="#" class="offer__link">
-            <img class="offer__link__img" src="img/paraphernalia/discount-img.png"
+            <img class="offer__link__img" src="../assets/img/paraphernalia/discount-img.png"
                  alt="discount">
             <div class="offer__link__content">
               <h5 class="offer__link__content__h5">Sales & discounts</h5>
@@ -155,7 +75,8 @@
             </div>
           </a>
           <a href="#" class="offer__link">
-            <img class="offer__link__img" src="img/paraphernalia/crown-img.png" alt="crown">
+            <img class="offer__link__img" src="../assets/img/paraphernalia/crown-img.png"
+                 alt="crown">
             <div class="offer__link__content">
               <h5 class="offer__link__content__h5">Quality assurance</h5>
               <p class="offer__link__content__p">Worldwide delivery on all.
@@ -171,8 +92,25 @@
 </template>
 
 <script>
+import productsForHome from '@/components/ProductsForHome.vue';
+import Preloader from '@/components/Preloader.vue';
+import { mapGetters, mapActions } from 'vuex';
+
 export default {
   name: 'Home',
+  components: {
+    productsForHome,
+    Preloader,
+  },
+  computed: {
+    ...mapGetters(['goodData', 'isLoaded']),
+  },
+  methods: {
+    ...mapActions(['fetchGoodData']),
+  },
+  created() {
+    this.fetchGoodData();
+  },
 };
 </script>
 

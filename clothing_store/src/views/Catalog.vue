@@ -1,5 +1,17 @@
 <template>
   <main class="main">
+    <section class="arrivals center">
+      <h2 class="arrivals__h2">New Arrivals</h2>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__items"><a href="index.html" class="breadcrumbs__link">Home\
+        </a> /
+        </li>
+        <li class="breadcrumbs__items"><a href="#" class="breadcrumbs__link">Men</a> /</li>
+        <li class="breadcrumbs__items"><a href="#"
+                                          class="breadcrumbs__link breadcrumbs__link-active">New
+          Arrivals</a></li>
+      </ul>
+    </section>
     <section class="catalog-s center">
       <div class="catalog-s__left">
         <ul class="accordion">
@@ -129,21 +141,21 @@
     </section>
     <div class="offers__box center">
       <a href="#" class="offers_link">
-        <img src="img/paraphernalia/truck-img.png" alt="truck">
+        <img src="../assets/img/paraphernalia/truck-img.png" alt="truck">
         <h4 class="offers__h4">Free Delivery</h4>
         <p class="offers__p">Worldwide delivery on all. Authorit tively morph next-generation
           innov tion with
           extensive models.</p>
       </a>
       <a href="#" class="offers_link">
-        <img src="img/paraphernalia/discount-img.png" alt="discount">
+        <img src="../assets/img/paraphernalia/discount-img.png" alt="discount">
         <h4 class="offers__h4">Sales & discounts</h4>
         <p class="offers__p">Worldwide delivery on all. Authorit tively morph next-generation
           innov tion with
           extensive models.</p>
       </a>
       <a href="#" class="offers_link">
-        <img src="img/paraphernalia/crown-img.png" alt="crown">
+        <img src="../assets/img/paraphernalia/crown-img.png" alt="crown">
         <h4 class="offers__h4">Quality assurance</h4>
         <p class="offers__p">Worldwide delivery on all. Authorit tively morph next-generation
           innov tion with

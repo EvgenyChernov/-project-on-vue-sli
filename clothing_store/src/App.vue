@@ -41,57 +41,7 @@
         </div>
         <filterEl></filterEl>
       </div>
-      <div class="header__right">
-        <div class="account__box">
-          <a href="#" class="button__account">My Account
-            <div class="button__account__arrow"></div>
-          </a>
-          <div class="drop">
-            <div class="drop__flex">
-              <div class="drop__ul">
-                <ul>
-                  <li>
-                    <form action="#" class="drop__li">
-                      <div class="drop__li-left">
-                        <a href="#" class="s-product-img product-s-1"></a>
-                      </div>
-                      <div class="drop__li-center">
-                        <a href="#" class="drop__li-center__h4">Rebox Zane</a>
-                        <div class="drop__li-center__stars"></div>
-                        <p class="drop__li-center__price">1 x $250</p>
-                      </div>
-                      <div class="drop__li-rght"><a href="#" class="button__dellete"></a></div>
-                    </form>
-                  </li>
-                  <li>
-                    <form action="#" class="drop__li">
-                      <div class="drop__li-left">
-                        <a href="#" class="s-product-img product-s-2"></a>
-                      </div>
-                      <div class="drop__li-center">
-                        <a href="#" class="drop__li-center__h4">Rebox Zane</a>
-                        <div class="drop__li-center__stars"></div>
-                        <p class="drop__li-center__price">1 x $250</p>
-                      </div>
-                      <div class="drop__li-rght"><a href="#" class="button__dellete"></a></div>
-                    </form>
-                  </li>
-                  <li class="drop__li drop__li__total">
-                    <p class="drop__li__total_p">TOTAL</p>
-                    <p class="drop__li__total_p">$500.00</p>
-                  </li>
-                </ul>
-                <a href="#" class="drop__li button__checkout">Checkout</a>
-                <a href="#" class="drop__li button__go">Go to cart</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <a href="shopping-cart.html" class="button__cart">
-          <div class="button__cart__number">2</div>
-        </a>
-      </div>
+      <cart></cart>
     </header>
     <nav class="nav">
       <ul class="menu center">
@@ -452,18 +402,6 @@
         </li>
       </ul>
     </nav>
-    <section class="arrivals center">
-      <h2 class="arrivals__h2">New Arrivals</h2>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__items"><a href="index.html" class="breadcrumbs__link">Home\
-        </a> /
-        </li>
-        <li class="breadcrumbs__items"><a href="#" class="breadcrumbs__link">Men</a> /</li>
-        <li class="breadcrumbs__items"><a href="#"
-                                          class="breadcrumbs__link breadcrumbs__link-active">New
-          Arrivals</a></li>
-      </ul>
-    </section>
     <main class="main">
       <router-view/>
     </main>
@@ -567,11 +505,13 @@
 
 <script>
 import filterEl from '@/components/FilterComp.vue';
+import cart from '@/components/Cart.vue';
 
 export default {
   name: 'app',
   components: {
     filterEl,
+    cart,
   },
 };
 </script>
@@ -1192,6 +1132,8 @@ body
         transition-timing-function: cubic-bezier(.48, .46, 0, 1.08)
         transition: all 0.2s
         display: flex
+        &_opacity
+          background: rgba(0, 0, 0, 0.3)
 
     &__img
       width: 100%

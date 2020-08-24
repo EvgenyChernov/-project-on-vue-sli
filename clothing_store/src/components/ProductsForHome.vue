@@ -1,10 +1,9 @@
 <template>
-  <div>
+  <div >
     <ProductItem
-      v-for="item of this.FILTERED"
+      v-for="item of [...this.FILTERED].filter((el, index) => index < 8)"
       :key="item.id_product" :img="item.img"
-      :product="item"
-      @addToCart="addToCart">
+      :product="item">
     </ProductItem>
   </div>
 </template>
@@ -14,11 +13,11 @@ import ProductItem from '@/components/ProductItem.vue';
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
-  name: 'Products',
+  name: 'products-for-home',
   data() {
     return {
       products: [],
-      imgCatalog: 'https://placehold.it/200x150',
+      filtr: [],
     };
   },
   components: {
@@ -28,14 +27,11 @@ export default {
     ...mapGetters(['FILTERED']),
   },
   methods: {
-    ...mapActions(['GET_PRODUCTS_FROM_API', 'ADDING_PRODUCT_IN_CART']),
+    ...mapActions(['GET_PRODUCTS_FROM_API']),
     addProduct() {
       this.PRODUCTS.forEach((el) => {
         this.products.push(el);
       });
-    },
-    addToCart(data) {
-      this.ADDING_PRODUCT_IN_CART(data);
     },
   },
   created() {
