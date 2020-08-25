@@ -3,7 +3,8 @@
     <ProductItem
       v-for="item of [...this.FILTERED].filter((el, index) => index < 8)"
       :key="item.id_product" :img="item.img"
-      :product="item">
+      :product="item"
+      @addToCart="addToCart">
     </ProductItem>
   </div>
 </template>
@@ -27,11 +28,14 @@ export default {
     ...mapGetters(['FILTERED']),
   },
   methods: {
-    ...mapActions(['GET_PRODUCTS_FROM_API']),
+    ...mapActions(['GET_PRODUCTS_FROM_API', 'ADDING_PRODUCT_IN_CART']),
     addProduct() {
       this.PRODUCTS.forEach((el) => {
         this.products.push(el);
       });
+    },
+    addToCart(data) {
+      this.ADDING_PRODUCT_IN_CART(data);
     },
   },
   created() {

@@ -41,7 +41,7 @@
         </div>
         <filterEl></filterEl>
       </div>
-      <cart></cart>
+      <cart :cart_data="this.CART"></cart>
     </header>
     <nav class="nav">
       <ul class="menu center">
@@ -506,12 +506,16 @@
 <script>
 import filterEl from '@/components/FilterComp.vue';
 import cart from '@/components/Cart.vue';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'app',
   components: {
     filterEl,
     cart,
+  },
+  computed: {
+    ...mapGetters(['CART']),
   },
 };
 </script>
@@ -774,12 +778,9 @@ body
     filter: drop-shadow(0 0 0.04rem rgb(173, 173, 173))
 
   & .drop
-    display: none
+    display: flex
     top: 36px
     right: -62px
-
-  &:hover .drop
-    display: flex
 
 .drop__li
   display: flex
@@ -1173,6 +1174,10 @@ body
 
       &__cart-img
         margin-right: 8px
+
+.product__img-cart
+  display: block
+  width: 80px
 
 .button__all-product
   white-space: nowrap
